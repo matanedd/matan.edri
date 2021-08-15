@@ -1,0 +1,23 @@
+
+
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    font-family: Tahoma, sans-serif;
+    width  : auto;
+    height: auto;
+    grid-template-columns: auto;
+    grid-template-rows   : auto;
+    grid-template-areas  :
+        "title"
+        "bio"
+        "contact"
+        ;
+}
+
+
+  li a {
+    display: block;
+  }
