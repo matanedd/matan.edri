@@ -1,0 +1,57 @@
+
+.container {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+    display: grid;
+    font-family: Tahoma, sans-serif;
+    width  : auto;
+    height: auto;
+    grid-template-columns: auto;
+    grid-template-rows   : 10% 90%;
+    grid-template-areas  :
+        "titles titles"
+        "bio contact"
+        ;
+}
+
+
+h1{
+  transition: 3s;
+
+}
+
+#titles{
+  grid-area: titles;
+}
+
+#bio{
+  grid-area: bio;
+}
+
+#contact{
+  grid-area: contact;
+}
+
+#contact {
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+  li a {
+    display: block;
+    
+  }
+ 
+
